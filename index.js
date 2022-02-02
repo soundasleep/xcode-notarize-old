@@ -218,7 +218,7 @@ const wait = async ({uuid, username, password, verbose}) => {
                 return false;
         }
 
-        await sleep(30000);
+        await sleep(300000);
     }
 
     core.error("Failed to get final notarization status on time.");
