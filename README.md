@@ -52,11 +52,13 @@ Here is an example of what you need to have to perform the full operation to gen
 - Developer Id Installer: 
   - name
   - .cer base64 
-  - .key base64 + password (if encrypted key, otherwise remove `-passin pass:${{ secrets.KEY_PASSWORD }}`)
+  - .key base64 
+  - .key password (if encrypted key, otherwise remove `-passin pass:${{ secrets.KEY_PASSWORD }}`)
 - Developer Id Application:
   - name
   - .cer base64 
-  - .key base64 + password (if encrypted key, otherwise remove `-passin pass:${{ secrets.KEY_PASSWORD }}`)
+  - .key base64
+  - .key password (if encrypted key, otherwise remove `-passin pass:${{ secrets.KEY_PASSWORD }}`)
 
 ### Workflow
 
