@@ -1,6 +1,6 @@
 # Xcode Notarize
 
-![46d82e1a0b0100936591de3958f3408d notarize_1](https://user-images.githubusercontent.com/22433243/153662588-10011e0c-d182-44da-9d53-79c482ce0ef2.jpg)
+![notarize](https://user-images.githubusercontent.com/22433243/153662864-191f43f7-359f-41c9-b80d-88c617c5d2d6.png)
 
 Github Action to notarize macOS applications or packages. It does this by submitting your built `.app`, `.pkg` or `.dmg` file to Apple's notarization service. It also will poll the notarization service until it times out of receives a success response.
 
