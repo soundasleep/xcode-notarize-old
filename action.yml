@@ -18,8 +18,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-name: 'Xcode Notarize'
-description: 'Notarize your Mac application or plugin.'
+name: 'Xcode Notarization'
+description: 'Notarize your Mac application or package.'
 
 branding:
   icon: 'command'
