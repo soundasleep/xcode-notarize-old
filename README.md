@@ -4,6 +4,8 @@ This action notarizes macOS applications or plug-ins. It does this by submitting
 
 > Notarization is a complicated process, but the gist of it is this: if you want to distribute your macOS application outside of the Mac App Store, you need to Sign and Notarize your application. This Action only needs two inputs for that: the `product-path` that points your application and your AppStore Connect credentials with `appstore-connect-username` / `appstore-connect-password`. (This need to be an _App Specific Password_ as regular accounts require 2FA)
 
+* * *
+
 ## Basic Usage
 
 ```yaml
@@ -17,13 +19,24 @@ This action notarizes macOS applications or plug-ins. It does this by submitting
 
 Note that notarization is not the final step. After Apple has notarized your application, you also want to _staple_ a notarization ticket to your product. This can be done with the [Xcode Staple](https://github.com/marketplace/actions/xcode-staple) action.
 
-## Full Example
+* * *
 
-The [devbotsxyz/example-macos-rings](https://github.com/devbotsxyz/example-macos-rings) project is an example macOS project with a [release.yml](https://github.com/devbotsxyz/example-macos-rings/.github/workflows/release.yml) workflow that shows all the steps needed to go from creating a release in GitHub to ending up with a `.zip` file that contains a signed and notarized application.
+## Inputs
+
+## ▶️ Action Inputs
+
+Field | Mandatory | Default Value | Observation
+------------ | ------------  | ------------- | -------------
+**product-path** | YES | N/A | Path to the product to notarize. <br/> _e.g: `path/to/product`_
+**appstore-connect-username** | NO | N/A | The AppStore Connect username.
+**appstore-connect-password** | NO | N/A | The AppStore Connect password.
+**appstore-connect-api-key** | NO | N/A | The AppStore Connect API Key.
+**appstore-connect-api-issuer** | NO | N/A | The AppStore Connect API Issuer.
+**primary-bundle-id** | NO | N/A | Unique identifier that identifies this product notarization. Defaults to the bundle identifier of the app you are uploading.
+**verbose** | NO | false | Verbose to detail action steps. 
 
 ## Related Actions
 
- * [Carthage Bootstrap](https://github.com/marketplace/actions/xcode-staple) - Bootstrap your Carthage Dependencies/
  * [Xcode Staple](https://github.com/marketplace/actions/xcode-staple) - Staple a Notarization Ticket to your product.
 
 ## License and Contributions
