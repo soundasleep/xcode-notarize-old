@@ -1,4 +1,4 @@
-# Xcode Notarize
+# Xcode Notarization
 
 ![notarize](https://user-images.githubusercontent.com/22433243/153662864-191f43f7-359f-41c9-b80d-88c617c5d2d6.png)
 
