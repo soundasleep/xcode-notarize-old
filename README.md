@@ -14,7 +14,7 @@ _Note: This action is a fork from [devbotsxyz/xcode-notarize](https://github.com
 - name: "Notarize Release Build"
   uses: GuillaumeFalourd/xcode-notarize@main
   with:
-    product-path: "Export/Rings.app"
+    product-path: "path/to/file.app" # or .pkg or .dmg
     appstore-connect-username: ${{ secrets.NOTARIZATION_USERNAME }}
     appstore-connect-password: ${{ secrets.NOTARIZATION_PASSWORD }}
 ```
