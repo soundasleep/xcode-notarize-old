@@ -23,7 +23,7 @@ Note that notarization is not the final step. After Apple has notarized your app
 
 * * *
 
-## ▶️ Action Inputs
+## Action Inputs
 
 Field | Mandatory | Default Value | Observation
 ------------ | ------------  | ------------- | -------------
