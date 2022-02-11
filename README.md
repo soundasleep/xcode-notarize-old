@@ -41,9 +41,9 @@ Field | Mandatory | Default Value | Observation
 
 ## Full example
 
-[Reference](https://stackoverflow.com/questions/70991268/how-to-sign-and-notarize-a-pkg-within-a-github-actions-macos-runner)
+- [StackOverflow Reference](https://stackoverflow.com/questions/70991268/how-to-sign-and-notarize-a-pkg-within-a-github-actions-macos-runner)
 
-Here is an example of what you need to have to perform the full operation to generate, sign and notarize a PKG on Github Actions (the concept would be similar for APP or DMG)
+Example of what you need to perform the full operation to generate, sign and notarize a PKG on Github Actions (the concept would be similar for APP or DMG).
 
 ### Premisses
 
