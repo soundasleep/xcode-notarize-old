@@ -1,8 +1,8 @@
 # Xcode Notarize
 
-This action notarizes macOS applications or plug-ins. It does this by submitting your built `.app` (or non-app bundle) to Apple's notarization service. It will poll the notarization service until it times out of receives a success response.
+![46d82e1a0b0100936591de3958f3408d notarize_1](https://user-images.githubusercontent.com/22433243/153662588-10011e0c-d182-44da-9d53-79c482ce0ef2.jpg)
 
-> Notarization is a complicated process, but the gist of it is this: if you want to distribute your macOS application outside of the Mac App Store, you need to Sign and Notarize your application. This Action only needs two inputs for that: the `product-path` that points your application and your AppStore Connect credentials with `appstore-connect-username` / `appstore-connect-password`. (This need to be an _App Specific Password_ as regular accounts require 2FA)
+Github Action to notarize macOS applications or packages. It does this by submitting your built `.app`, `.pkg` or `.dmg` file to Apple's notarization service. It also will poll the notarization service until it times out of receives a success response.
 
 * * *
 
