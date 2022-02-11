@@ -12,7 +12,7 @@ _Note: This action is a fork from [devbotsxyz/xcode-notarize](https://github.com
 
 ```yaml
 - name: "Notarize Release Build"
-  uses: devbotsxyz/xcode-notarize@v1
+  uses: GuillaumeFalourd/xcode-notarize@v1
   with:
     product-path: "Export/Rings.app"
     appstore-connect-username: ${{ secrets.NOTARIZATION_USERNAME }}
