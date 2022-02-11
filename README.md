@@ -47,8 +47,8 @@ Example of what you need to perform the full operation to generate, sign and not
 
 ### Premisses
 
-- Email/Username Apple Id Developer account
-- Password Apple Id Developer account
+- Email/Username Apple Id Developer account (AppStore)
+- Password Apple Id Developer account (AppStore)
 - Developer Id Installer: 
   - name
   - .cer base64 
