@@ -4,6 +4,8 @@
 
 Github Action to notarize macOS applications or packages. It does this by submitting your built `.app`, `.pkg` or `.dmg` file to Apple's notarization service. It also will poll the notarization service until it times out of receives a success response.
 
+_Note: This action is a fork from [devbotsxyz/xcode-notarize](https://github.com/devbotsxyz/xcode-notarize) with higher retries and timeout values._
+
 * * *
 
 ## Basic Usage
@@ -20,8 +22,6 @@ Github Action to notarize macOS applications or packages. It does this by submit
 Note that notarization is not the final step. After Apple has notarized your application, you also want to _staple_ a notarization ticket to your product. This can be done with the [Xcode Staple](https://github.com/marketplace/actions/xcode-staple) action.
 
 * * *
-
-## Inputs
 
 ## ▶️ Action Inputs
 
